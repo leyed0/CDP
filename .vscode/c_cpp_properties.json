@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "UCRT64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/Dev/apps/msys64/ucrt64/bin/gcc.exe",
+            "cStandard": "c23",
+            "intelliSenseMode": "windows-gcc-x64",
+            "cppStandard": "c++23"
+        }
+    ],
+    "version": 4
+}
