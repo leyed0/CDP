@@ -6,7 +6,7 @@ int main(int argc, char* argv[]){
 
     cin >> e;
 
-    int values[10^5];
+    int values[100000];
 
     for(int i=0; i<e; i++)cin >> values[i];
 
@@ -16,12 +16,11 @@ int main(int argc, char* argv[]){
         int qv;
         cin >> qv;
         for(int j=0; j<e; j++){
-            it[0]++;
-            if(values[j]==qv)break;
-        }
-        for(int j=e-1; j>=0; j--){
-            it[1]++;
-            if(values[j]==qv)break;
+            if(qv == values[j]) {
+                it[0]+=j+1;
+                it[1]+=e-j;
+                break;
+            }
         }
     }
 
