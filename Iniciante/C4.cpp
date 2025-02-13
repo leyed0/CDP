@@ -6,20 +6,21 @@ int main(int argc, char* argv[]){
 
     cin >> e;
 
-    int values[100000];
+    int values[100000]; //taanho baseado no enunciado
 
-    for(int i=0; i<e; i++)cin >> values[i]; // reebe lista
+    for(int i=0; i<e; i++)cin >> values[i]; // recebe lista
 
-    cin >> q;
+    cin >> q; //recebe tamanho da query
 
-    for(int i=0; i<q; i++){
+    for(int i=0; i<q; i++){ //loop para receber os valores da query
         int qv;
-        cin >> qv; // reebe um mvalor da query
+        cin >> qv; // reebe um valor da query
+
         for(int j=0; j<e; j++){ //buscar esse valor
-            if(qv == values[j]) {
-                it[0]+=j+1; //encontrou na busca ->
+            if(qv == values[j]) { //valor encontrado?
+                it[0]+=j+1; // iterações soma com o contador, busca ->
                 it[1]+=e-j; // calculo para busca <-
-                break;
+                break; //quebra o loop
             }
         }
     }
